@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+</head>
+<body>
+    <h1>User Management</h1>
+    <div>
+        <h2>Add User</h2>
+        <form action="/add_user" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Add User</button>
+        </form>
+    </div>
+    <div>
+        <h2>Edit User</h2>
+        <form action="/edit_user" method="POST">
+            <label for="edit_username">Username:</label>
+            <input type="text" id="edit_username" name="edit_username" required>
+            <button type="submit">Edit User</button>
+        </form>
+    </div>
+    <div>
+        <h2>Delete User</h2>
+        <form action="/delete_user" method="POST">
+            <label for="delete_username">Username:</label>
+            <input type="text" id="delete_username" name="delete_username" required>
+            <button type="submit">Delete User</button>
+        </form>
+    </div>
+</body>
+</html>
